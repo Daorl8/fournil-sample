@@ -203,7 +203,7 @@ h2.disp{ font-size:clamp(3.6rem,13vw,9.5rem); }
 @media (min-width:960px){ .foot .wrap{ grid-template-columns:auto 1fr auto; align-items:end; gap:56px; } }
 
 /* 리빌: 윗변이 화면 78% 선을 넘으면 나타남 (setInterval · 끝까지 스크롤 시 전부 표시) */
-.js .reveal{ opacity:0; transform:translateY(28px); transition:opacity .9s ease, transform .9s cubic-bezier(.2,.7,.2,1); transition-delay:var(--d,0s); }
+.js .reveal{ opacity:0; transform:translateY(28px); transition:opacity .6s ease, transform .6s cubic-bezier(.2,.7,.2,1); transition-delay:var(--d,0s); }
 .js .reveal.in{ opacity:1; transform:none; }
 @media print{ .js .reveal{ opacity:1; transform:none; } }
 </style>
@@ -408,7 +408,7 @@ h2.disp{ font-size:clamp(3.6rem,13vw,9.5rem); }
     if(window.innerHeight + window.pageYOffset >= document.documentElement.scrollHeight - 4){
       pending.forEach(function(el){ el.classList.add('in'); }); pending=[]; return;
     }
-    var line=window.innerHeight*0.78;
+    var line=window.innerHeight*0.92;
     pending=pending.filter(function(el){
       if(el.getBoundingClientRect().top<line){ el.classList.add('in'); return false; }
       return true;
