@@ -1,0 +1,13 @@
+.git
+.git/**
+wrangler.toml
+.assetsignore
+README.md
+CHANGELOG.md
+STRUCTURE.md
+img
+img/**
+index_*.html
+# 로고 원본 png (웹은 webp)
+fn-logo.png
+fn-logo-light.png
